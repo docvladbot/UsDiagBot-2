@@ -50,11 +50,11 @@ def handle_video(update: Update, context: CallbackContext):
 
     cap.release()
     os.remove(video_path)
-    update.message.reply_text("Результаты анализа по кадрам:\n" +
-    "\n".join(results))
+    update.message.reply_text("Результаты анализа по кадрам:
+" + "\n".join(results))
 
 def main():
-    updater = Updater("7555855256:AAHfTwjfkEaPz3Z89RBD41Q5Y-i5lEGyHms, use_context=True)
+    updater = Updater(TOKEN, use_context=True)
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler("start", start))
