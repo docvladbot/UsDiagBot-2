@@ -13,7 +13,7 @@ def handle_video(update: Update, context: CallbackContext):
     update.message.reply_text("Получено видео! Обработка...")
 
 def main():
-    updater = Updater(7555855256:AAHfTwjfkEaPz3Z89RBD41Q5Y-i5lEGyHms,use_context=True)
+    updater = Updater("7555855256:AAHfTwjfkEaPz3Z89RBD41Q5Y-i5lEGyHms",use_context=True)
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler("start", start))
